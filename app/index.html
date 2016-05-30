@@ -1,24 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bill Horst</title>
-    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-    <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js"></script>
-    <script src="directives.js"></script>
-    <script src="factories.js"></script>
-    <link rel="stylesheet" href="styles.css">
-<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+  <title>Bill Horst</title>
+  <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script src="scripts/app.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js"></script>-->
+  <script src="scripts/directives.js"></script>
+  <script src="scripts/factories.js"></script>
+  <link rel="stylesheet" href="styles/styles.css">
+  <!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
 </head>
 
 <body ng-app="app">
 
-    <div ng-controller="mainController">
+  <div ng-controller="mainController">
 
-       <front></front>
-       
-    </div>
+<h1 id="result"></h1>
+<!--    <h1>Hi</h1>
+   <input ng-model="data.inputa" type="number" />First number
+   <input ng-model="data.inputb" type="number" />Second number -->
+
+
+<!--    <h3>{{input}}</h3>
+   <h4>{{data.test1}}</h4>
+   <h4>{{answer}}</h4> -->
+   <!-- <button ng-click="addNumbers(data.inputa,data.inputb)">Add Numbers</button> -->
+   <div class="topNavigation">
+     <div ng-show="languageChoice.isEnglish">
+      <ul class="navList">
+        <li class="nameLogo" ng-click="toHome()">Bill Horst</li>
+        <li ng-click="toAbout()">About</li>
+        <li ng-click="toProjects()">Projects</li>
+        <li ng-click="toContact()">Contact</li>
+        <li class="resumeDropdown">Resume
+          <div class="dropdown-content">
+            <a target="_blank" href="{{url.resumeApp}}" ng-click="openResumeApp()">View</a>
+            <a href="pdfs/HorstResume.pdf" download="WilliamHorstResume">Download</a>
+          </div>
+        </li>
+      </ul>
+
+      <div class="langButtonDiv">
+       <button class="langButton" ng-click="toJapanese()">Japanese</button>
+     </div>
+   </div>
+   <div ng-show="languageChoice.isJapanese">
+    <ul class="navList">
+      <li class="nameLogo" ng-click="toHome()">ホースト-ビリー</li>
+      <li ng-click="toAbout()">自己紹介</li>
+      <li ng-click="toProjects()">プロジェクト</li>
+      <li ng-click="toContact()">連絡先</li>
+      <li class="resumeDropdown">履歴書
+        <div class="dropdown-content">
+          <a target="_blank" href="{{url.resumeApp}}" ng-click="openResumeApp()">閲覧</a>
+          <a href="pdfs/HorstResume.pdf" download="WilliamHorstResume">ダウンロード</a>
+        </div>
+      </li>
+    </ul>
+    <div class="langButtonDiv">
+     <button class="langButton" ng-click="toEnglish()" ng-show="languageChoice.isJapanese">英語</button>
+   </div>
+ </div>
+</div>
+
+<div class="mainPage">
+  <home ng-show="navigation.showHome"></home>
+  <about ng-show="navigation.showAbout"></about>
+  <projects ng-show="navigation.showProjects"></projects>
+  <contact ng-show="navigation.showContact"></contact>
+</div>
+
+<div class="extender"></div>
+
+</div>
 
 </body>
+  <script src="scripts/scripts.js"></script>
 
 </html>

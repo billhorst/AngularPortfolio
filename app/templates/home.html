@@ -1,0 +1,10 @@
+<h1 ng-show="languageChoice.isEnglish">Home</h1>
+<h1 ng-show="languageChoice.isJapanese">ホーム</h1>
+<h1>Notes:</h1>
+<ul>
+	<li style="text-decoration: line-through">use local storage to save language preference in browser</li>
+	<li>design with purple design</li>
+	<li>make sure that if person 'refreshes' while on non-home page (ie projects directive), page will return projects page when refresh... right now, when you refresh, the controller sets $scope.navigation.showHome = true. make it so it sets $scope.navigation to whatever is stored in local storage</li>
+	<li>make 'resume' button open a modal with resume and a button at top and bottom of modal to allow user to download resume in PDF format</li>
+	<li>make portfolio somewhat responsive using media queries, not bootstrap</li>
+</ul>
