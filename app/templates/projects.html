@@ -1,8 +1,55 @@
-<h1 ng-show="languageChoice.isEnglish">Projects</h1>
-<h1 ng-show="languageChoice.isJapanese">プロジェクト</h1>
+<!-- <h1 ng-show="languageChoice.isEnglish">Projects</h1>
+	<h1 ng-show="languageChoice.isJapanese">プロジェクト</h1> -->
 
-<a target="_blank" ng-href="{{url.calculatorApp}}" ng-click="openCalcApp()"><img src="images/calc.PNG" /></a>
+<!-- <a target="_blank" ng-href="{{url.calculatorApp}}" ng-click="openCalcApp()"><img src="images/calc.PNG" /></a>
 <a target="_blank" ng-href="{{url.calculatorCode}}" ng-click="openCalcCode()">See code</a>
 
 <a target="_blank" ng-href="{{url.plotGenApp}}" ng-click="openPlotGeneratorApp()"><img src="images/plotGenPic.PNG" /></a>
-<a target="_blank" ng-href="{{url.plotGenCode}}" ng-click="openPlotGeneratorCode()">See code</a>
+<a target="_blank" ng-href="{{url.plotGenCode}}" ng-click="openPlotGeneratorCode()">See code</a> -->
+
+<div class="projects-content">
+	<div class="projects-line1">
+		<div class="projectBoxLeft">
+			<div class="projectTitle">
+				<h2>Plot Generator</h2>
+			</div>
+			<a target="_blank" ng-href="{{url.plotGenApp}}" ng-click="openPlotGeneratorApp()"><div class="projectApp"><img src="images/plotGenPic.PNG" /></div></a>
+			<div class="projectDescription">
+				<p>An AngularJS application that takes words you input and generates a random plot in various genres.</p>
+			</div>
+			<a target="_blank" ng-href="{{url.plotGenCode}}" ng-click="openPlotGeneratorCode()"><div class="projectCode"><span>See code in GitHub</span></div></a>
+		</div>
+		<div class="projectBoxRight">
+			<div class="projectTitle">
+				<h2>Geography Quiz</h2>
+			</div>
+			<div class="projectApp"></div>
+			<div class="projectDescription">
+				<p></p>
+			</div>
+			<div class="projectCode"></div>
+		</div>
+	</div>
+	<div class="projects-line2">
+		<div class="projectBoxLeft">
+			<div class="projectTitle">
+				<h2>Animal Kennel</h2>
+			</div>
+			<div class="projectApp"></div>
+			<div class="projectDescription">
+				<p></p>
+			</div>
+			<div class="projectCode"></div>
+		</div>
+		<div class="projectBoxRight">
+			<div class="projectTitle">
+				<h2>Calculator</h2>
+			</div>
+			<div class="projectApp"></div>
+			<div class="projectDescription">
+				<p></p>
+			</div>
+			<div class="projectCode"></div>
+		</div>
+	</div>
+</div>
