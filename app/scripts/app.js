@@ -15,7 +15,7 @@ function mainController($scope, AddUp) {
     } else {
         alert("Sorry, your browser may not support all the features of this website."+
             "Upgrade or else I'll tell all your friends that you're running an outdated browser."+
-            "... and that you use a flip phone...");
+            "... and also that you use a flip phone...");
     }
 
     $scope.navigation = {};

@@ -1,0 +1,34 @@
+<div class="topNavigation">
+ <div ng-show="languageChoice.isEnglish">
+  <ul class="navList">
+    <li class="nameLogo" ng-click="toHome()">Bill Horst</li>
+    <li ng-click="toProjects()">Projects</li>
+    <li ng-click="toContact()">Contact</li>
+    <li class="resumeDropdown">Resume
+      <div class="dropdown-content">
+        <a target="_blank" href="{{url.resumeApp}}" ng-click="openResumeApp()">View</a>
+        <a href="pdfs/HorstResume.pdf" download="WilliamHorstResume">Download</a>
+      </div>
+    </li>
+  </ul>
+
+  <div class="langButtonDiv">
+  <button class="langButton" ng-click="toJapanese()">日本語</button>
+ </div>
+</div>
+<div ng-show="languageChoice.isJapanese">
+  <ul class="navList">
+    <li class="nameLogo" ng-click="toHome()">ホースト-ビリー</li>
+    <li ng-click="toProjects()">プロジェクト</li>
+    <li ng-click="toContact()">連絡先</li>
+    <li class="resumeDropdown">履歴書
+      <div class="dropdown-content">
+        <a target="_blank" href="{{url.resumeApp}}" ng-click="openResumeApp()">閲覧</a>
+        <a href="pdfs/HorstResume.pdf" download="WilliamHorstResume">ダウンロード</a>
+      </div>
+    </li>
+  </ul>
+  <div class="langButtonDiv">
+   <button class="langButton" ng-click="toEnglish()" ng-show="languageChoice.isJapanese">English</button>
+ </div>
+</div>
