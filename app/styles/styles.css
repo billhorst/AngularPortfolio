@@ -84,11 +84,11 @@ HOME PAGE
 .home-picture {
 	height: 60%;
 	width: 100%;
-	/*background-image: url("../images/selfPic.PNG");*/
-	background-color: red;
+	background-image: url("../images/selfPic.PNG");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	border-radius: 100px;
+	box-shadow: 0 0 200px grey;
 }
 
 .home-explanation {
@@ -166,6 +166,10 @@ PROJECTS PAGE
 ---------------------------
 */
 
+.projects-content {
+	max-width: 1200px;
+	margin: auto;
+}
 
 .projectBoxLeft {
 	height: 454px;
@@ -244,6 +248,7 @@ PROJECTS PAGE
 	font-size: 18pt;
 	text-align: center;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 /*----------------------------*/
@@ -429,7 +434,49 @@ Media Queries
 	}
 }
 
+/*PROJECTS PAGE MEDIA QUERY
+------------------------*/
 
+@media only screen and (max-width: 1275px) {
+
+	.projects-content {
+		width: 582px;
+	}
+
+}
+
+@media only screen and (max-width: 800px) {
+
+	.projectBoxLeft {
+		height: 227px;
+		width: 225px;
+		margin: 50px 10px 40px 65px;
+		display: block;
+		background-color: white;
+		border: solid grey 1px;
+	}
+
+	.projectBoxRight {
+		height: 227px;
+		width: 225px;
+		margin: 50px 65px 40px 65px;
+		display: block;
+		background-color: white;
+		border: solid grey 1px;
+	}
+
+	.projectTitle, .projectDescription {
+		display: none;
+	}
+
+	.projects-content {
+		width: 357px;
+	}
+
+	.projects-content span {
+		font-size: 12pt;
+	}
+}
 
 
 

@@ -9,47 +9,63 @@
 
 <div class="projects-content">
 	<div class="projects-line1">
+
+
 		<div class="projectBoxLeft">
 			<div class="projectTitle">
-				<h2>Plot Generator</h2>
+				<h2 ng-show="languageChoice.isEnglish">Plot Generator</h2>
+				<h2 ng-show="languageChoice.isJapanese">プロットメーカー</h2>
 			</div>
 			<a target="_blank" ng-href="{{url.plotGenApp}}" ng-click="openPlotGeneratorApp()"><div class="projectApp"><img src="images/plotGenPic.PNG" /></div></a>
 			<div class="projectDescription">
 				<p>An AngularJS application that takes words you input and generates a random plot in various genres.</p>
 			</div>
-			<a target="_blank" ng-href="{{url.plotGenCode}}" ng-click="openPlotGeneratorCode()"><div class="projectCode"><span>See code in GitHub</span></div></a>
+			<a target="_blank" ng-href="{{url.plotGenCode}}" ng-click="openPlotGeneratorCode()"><div class="projectCode"><span ng-show="languageChoice.isEnglish">See code in GitHub</span><span ng-show="languageChoice.isJapanese">GitHubでコードを閲覧</span></div></a>
 		</div>
+
+
 		<div class="projectBoxRight">
 			<div class="projectTitle">
-				<h2>Geography Quiz</h2>
+				<h2 ng-show="languageChoice.isEnglish">Geography Quiz</h2>
+				<h2 ng-show="languageChoice.isJapanese">地理クイズ</h2>
 			</div>
-			<div class="projectApp"></div>
+			<a target="_blank" ng-href="{{url.geographyQuizApp}}" ng-click="openGeographyQuizApp()"><div class="projectApp"><img src="images/geographyQuizPic.PNG" /></div></a>
 			<div class="projectDescription">
-				<p></p>
+				<p>An AngularJS application that calls to the Geonames API. You can take a 10 question quiz on one of three types.</p>
 			</div>
-			<div class="projectCode"></div>
+			<a target="_blank" ng-href="{{url.geographyQuizCode}}" ng-click="openGeographyQuizCode()"><div class="projectCode"><span ng-show="languageChoice.isEnglish">See code in GitHub</span><span ng-show="languageChoice.isJapanese">GitHubでコードを閲覧</span></div></a>
 		</div>
 	</div>
+
+
 	<div class="projects-line2">
+
+
 		<div class="projectBoxLeft">
 			<div class="projectTitle">
-				<h2>Animal Kennel</h2>
+				<h2 ng-show="languageChoice.isEnglish">Calculator</h2>
+				<h2 ng-show="languageChoice.isJapanese">電卓</h2>
 			</div>
-			<div class="projectApp"></div>
+			<a target="_blank" ng-href="{{url.calculatorApp}}" ng-click="openCalculatorApp()"><div class="projectApp"><img src="images/calculatorPic.PNG" /></div></a>
 			<div class="projectDescription">
-				<p></p>
+				<p>A basic calculator made with AngularJS and JavaScript.</p>
 			</div>
-			<div class="projectCode"></div>
+			<a target="_blank" ng-href="{{url.calculatorCode}}" ng-click="openCalculatorCode()"><div class="projectCode"><span ng-show="languageChoice.isEnglish">See code in GitHub</span><span ng-show="languageChoice.isJapanese">GitHubでコードを閲覧</span></div></a>
 		</div>
+
+
 		<div class="projectBoxRight">
 			<div class="projectTitle">
-				<h2>Calculator</h2>
+				<h2 ng-show="languageChoice.isEnglish">Flickr Searcher</h2>
+				<h2 ng-show="languageChoice.isJapanese">フリッカー検索機</h2>
 			</div>
-			<div class="projectApp"></div>
+			<a target="_blank" ng-href="{{url.flickrSearcherApp}}" ng-click="openFlickrSearcherApp()"><div class="projectApp"><img src="images/flickrPic.PNG" /></div></a>
 			<div class="projectDescription">
-				<p></p>
+				<p>An AngularJS app that makes a call to the Flickr API and returns up to ten pictures based on the search criteria you specify.</p>
 			</div>
-			<div class="projectCode"></div>
+			<a target="_blank" ng-href="{{url.flickrSearcherCode}}" ng-click="openFlickrSearcherCode()"><div class="projectCode"><span ng-show="languageChoice.isEnglish">See code in GitHub</span><span ng-show="languageChoice.isJapanese">GitHubでコードを閲覧</span></div></a>
 		</div>
+
+
 	</div>
 </div>

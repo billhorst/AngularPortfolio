@@ -70,15 +70,7 @@ function mainController($scope, AddUp) {
         localStorage.setItem("languagePreference", "Japanese");
     }
 
-    $scope.openCalcApp = function() {
-        //open my calculator gh-pages app in a new tab
-        $scope.url.calculatorApp = 'http://billhorst.github.io/Calculator/index.html';
-    }
-
-    $scope.openCalcCode = function() {
-        //open my calculator master code page in GitHub in a new tab
-        $scope.url.calculatorCode = 'https://github.com/billhorst/Calculator';
-    }
+    //Project links
 
     $scope.openPlotGeneratorApp = function() {
         //open my calculator gh-pages app in a new tab
@@ -89,6 +81,31 @@ function mainController($scope, AddUp) {
         //open my calculator master code page in GitHub in a new tab
         $scope.url.plotGenCode = 'https://github.com/billhorst/PlotGenerator';
     }
+
+    $scope.openGeographyQuizApp = function() {
+        //$scope.url.geographyQuizApp = 'Quiz game after I replace the billhorst one with the new one';
+    }
+
+    $scope.openGeographyQuizCode = function() {
+        //$scope.url.geographyQuizCode = 'Same as the app: put up after I replace old one on billhorst GitHub';
+    }
+
+    $scope.openCalculatorApp = function() {
+        $scope.url.calculatorApp = 'http://billhorst.github.io/Calculator/index.html';
+    }
+
+    $scope.openCalculatorCode = function() {
+        $scope.url.calculatorCode = 'https://github.com/billhorst/Calculator';
+    }
+
+    $scope.openFlickrSearcherApp = function() {
+        // $scope.url.flickrSearcherApp = 'put up after I put flickrSearcherApp on billhorst github';
+    }
+
+    $scope.openFlickrSearcherCode = function() {
+        // $scope.url.flickrSearcherCode = ''put up after I put flickrSearcherApp on billhorst github'';
+    }
+
 
     $scope.openResumeApp = function() {
         $scope.url.resumeApp = "http://billhorst.github.io/resume/index.html";
