@@ -99,11 +99,11 @@ function mainController($scope, AddUp) {
     }
 
     $scope.openFlickrSearcherApp = function() {
-        // $scope.url.flickrSearcherApp = 'put up after I put flickrSearcherApp on billhorst github';
+        $scope.url.flickrSearcherApp = 'http://billhorst.github.io/FlickrSearcher/index.html';
     }
 
     $scope.openFlickrSearcherCode = function() {
-        // $scope.url.flickrSearcherCode = ''put up after I put flickrSearcherApp on billhorst github'';
+        $scope.url.flickrSearcherCode = 'https://github.com/billhorst/FlickrSearcher';
     }
 
 

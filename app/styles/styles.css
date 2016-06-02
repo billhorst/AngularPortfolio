@@ -1,5 +1,6 @@
 body {
-	background-color: #E3DEFF;
+	/*background-color: #E3DEFF;*/
+	background-color: #6500E8;
 }
 
 * {
@@ -34,7 +35,8 @@ NAVIGATION BAR
 }
 
 .topNavigation li:hover {
-	text-shadow: 2px 2px 8px #FFFB12;
+	/*text-shadow: 2px 2px 8px #FFFB12;*/
+	text-shadow: 3px 0px 4px white;
 }
 
 .navList li:nth-last-child(n+2) {
@@ -106,8 +108,8 @@ HOME PAGE
 }
 
 .home-explanation span:hover {
-	color: red;
 	cursor: pointer;
+	text-shadow: 3px 0px 6px white;
 }
 
 /*--------------------------------
@@ -183,7 +185,8 @@ PROJECTS PAGE
 
 .projectBoxLeft:hover {
 	border: 1px solid #07c;
-	box-shadow: 0 0 200px #07c;
+	/*box-shadow: 0 0 200px #07c;*/
+	box-shadow: 0 0 200px white;
 }
 
 .projectBoxRight {
@@ -198,7 +201,8 @@ PROJECTS PAGE
 
 .projectBoxRight:hover {
 	border: 1px solid #07c;
-	box-shadow: 0 0 200px #07c;
+	/*box-shadow: 0 0 200px #07c;*/
+	box-shadow: 0 0 200px white;
 }
 
 .projectTitle {
