@@ -97,11 +97,11 @@ function mainController($scope, AddUp) {
     }
 
     $scope.openCalculatorApp = function() {
-        // $scope.url.calculatorApp = 'http://billhorst.github.io/Calculator/index.html';
+        $scope.url.calculatorApp = 'http://billhorst.github.io/Calculator/index.html';
     }
 
     $scope.openCalculatorCode = function() {
-        // $scope.url.calculatorCode = 'https://github.com/billhorst/Calculator';
+        $scope.url.calculatorCode = 'https://github.com/billhorst/Calculator';
     }
 
 
