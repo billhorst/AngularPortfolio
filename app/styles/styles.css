@@ -118,9 +118,11 @@ CONTACT PAGE
 
 .contact-content {
 	height: 400px;
-	width: 400px;
+	width: 700px;
 	margin: auto;
 	margin-top: 50px;
+	background-color: white;
+	padding: 30px;
 }
 
 .contact-name {
@@ -415,6 +417,7 @@ Media Queries
 		width: 200px;
 		margin: auto;
 		margin-top: 30px;
+
 	}
 
 	.contact-name {
@@ -492,3 +495,8 @@ Media Queries
 	height: 1500px;
 }
 
+.comingSoon {
+	min-width: 100px;
+	min-height: 100px;
+	background:rgba(255,255,255,0.5);
+}

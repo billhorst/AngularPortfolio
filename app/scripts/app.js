@@ -73,13 +73,19 @@ function mainController($scope, AddUp) {
     //Project links
 
     $scope.openPlotGeneratorApp = function() {
-        //open my calculator gh-pages app in a new tab
         $scope.url.plotGenApp = 'http://billhorst.github.io/PlotGenerator/index.html';
     }
 
     $scope.openPlotGeneratorCode = function() {
-        //open my calculator master code page in GitHub in a new tab
         $scope.url.plotGenCode = 'https://github.com/billhorst/PlotGenerator';
+    }
+
+    $scope.openFlickrSearcherApp = function() {
+        $scope.url.flickrSearcherApp = 'http://billhorst.github.io/FlickrSearcher/index.html';
+    }
+
+    $scope.openFlickrSearcherCode = function() {
+        $scope.url.flickrSearcherCode = 'https://github.com/billhorst/FlickrSearcher';
     }
 
     $scope.openGeographyQuizApp = function() {
@@ -91,19 +97,11 @@ function mainController($scope, AddUp) {
     }
 
     $scope.openCalculatorApp = function() {
-        $scope.url.calculatorApp = 'http://billhorst.github.io/Calculator/index.html';
+        // $scope.url.calculatorApp = 'http://billhorst.github.io/Calculator/index.html';
     }
 
     $scope.openCalculatorCode = function() {
-        $scope.url.calculatorCode = 'https://github.com/billhorst/Calculator';
-    }
-
-    $scope.openFlickrSearcherApp = function() {
-        $scope.url.flickrSearcherApp = 'http://billhorst.github.io/FlickrSearcher/index.html';
-    }
-
-    $scope.openFlickrSearcherCode = function() {
-        $scope.url.flickrSearcherCode = 'https://github.com/billhorst/FlickrSearcher';
+        // $scope.url.calculatorCode = 'https://github.com/billhorst/Calculator';
     }
 
 
