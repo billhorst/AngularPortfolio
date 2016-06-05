@@ -2,13 +2,7 @@ angular.module('app', ['Factories', 'Directives'])
 
 .controller('mainController', mainController);
 
-function mainController($scope, AddUp) {
-    // $scope.data = {};
-    // $scope.data.test1 = "Hi";
-    // var inputA = $scope.data.inputa;
-    // var inputB = $scope.data.inputb;
-    // console.log(inputA);
-
+function mainController($scope) {
 
     if (typeof(Storage) !== "undefined") {
         //do nothing
@@ -31,12 +25,6 @@ function mainController($scope, AddUp) {
     }
 
     $scope.navigation.showHome = true;
-    //set navigation to whatever is current in browser's local storage (if empty, default is 'home')
-
-    // $scope.addNumbers = function(c,d) {
-    //     console.log("Add Numbers clicked, first: "+c+" second: "+d);
-    //     $scope.answer = AddUp.add(c,d);
-    // }
 
     $scope.toHome = function() {
         $scope.navigation = {};

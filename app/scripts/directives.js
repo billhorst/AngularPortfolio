@@ -5,7 +5,6 @@ angular.module('Directives',[])
 .directive('projects', Projects)
 .directive('contact', Contact)
 .directive('navBar', NavigationBar)
-// .directive('resume', Resume)
 
 function Home() {
     return {

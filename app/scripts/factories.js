@@ -1,11 +1,9 @@
 angular.module("Factories", [])
 
-.factory('AddUp', Calculation)
+.factory('test', Test)
 
-function Calculation() {
+function Test() {
     return {
-        add: function(a, b) {
-            return a + b;
-        }
+        
     }
 }
