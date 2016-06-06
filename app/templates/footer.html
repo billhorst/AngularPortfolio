@@ -1,0 +1,46 @@
+<div class="foot" ng-show="languageChoice.isEnglish">
+
+	<div class="footerContent">
+
+		<div class="footerName">
+			<h3 ng-click="toHome()" class="footerLink footerHover">Bill Horst</h3>
+		</div>
+
+		<div class="footerLinks">
+			<span ng-click="toProjects()" class="footerLink footerHover">Projects Page</span>
+			<span ng-click="toContact()" class="footerLink footerHover">Contact Page</span>
+			<span>Resume: <a target="_blank" href="{{url.resumeApp}}" ng-click="openResumeApp()" class="footerResumeLinks footerLink footerHover">View</a> / <a href="pdfs/HorstResume.pdf" download="WilliamHorstResume" class="footerResumeLinks footerLink footerHover">Download</a></span>
+		</div>
+
+		<div class="footerImages">
+		<a href='https://github.com/billhorst'><img src='images/gitHubIcon.png' id="gitHubIcon"></a>
+			<a href='https://www.linkedin.com/in/bill-horst-a30a3629'><img src='images/linkedInIcon.png' class='liImage'></a>
+		</div>
+
+	</div>
+
+</div>
+
+
+<div class="foot" ng-show="languageChoice.isJapanese">
+
+	<div class="footerContent">
+
+		<div class="footerName">
+			<h3 ng-click="toHome()" class="footerLink footerHover">ホースト-ビリー</h3>
+		</div>
+
+		<div class="footerLinks">
+			<span ng-click="toProjects()" class="footerLink footerHover">プロジェクト</span>
+			<span ng-click="toContact()" class="footerLink footerHover">連絡先</span>
+			<span>履歴書: <a target="_blank" href="{{url.resumeApp}}" ng-click="openResumeApp()" class="footerResumeLinks footerLink footerHover">閲覧</a> / <a href="pdfs/HorstResume.pdf" download="WilliamHorstResume" class="footerResumeLinks footerLink footerHover">ダウンロード</a></span>
+		</div>
+
+		<div class="footerImages">
+		<a href='https://github.com/billhorst'><img src='images/gitHubIcon.png' id="gitHubIcon"></a>
+			<a href='https://www.linkedin.com/in/bill-horst-a30a3629'><img src='images/linkedInIcon.png' class='liImage'></a>
+		</div>
+
+	</div>
+
+</div>

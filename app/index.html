@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app" ng-controller="mainController">
 <head>
-  <title>Bill Horst</title>
+  <title>Bill Horst - Software engineer - Colorado, USA</title>
   <script src="scripts/angular.js"></script>
 <!--   // <script type="text/javascript" src="bower_components/angular/angular.js"></script> -->
   <!-- // <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script> -->
@@ -11,9 +11,9 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body ng-app="app">
+<body ng-class="{ 'bodyHome': navigation.showHome, 'bodyProjects': navigation.showProjects, 'bodyContact': navigation.showContact }">
 
-  <div class="siteContents" ng-controller="mainController">
+  <div class="siteContents">
 
     <nav-bar></nav-bar>
 
@@ -23,7 +23,9 @@
       <contact ng-show="navigation.showContact"></contact>
     </div>
 
-    <div class="extender"></div>
+    <foot></foot>
+
+    <!-- <div class="extender"></div> -->
 
   </div>
 

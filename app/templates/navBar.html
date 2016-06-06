@@ -1,9 +1,9 @@
 <div class="topNavigation">
  <div ng-show="languageChoice.isEnglish">
   <ul class="navList">
-    <li class="nameLogo" ng-click="toHome()">Bill Horst</li>
-    <li ng-click="toProjects()">Projects</li>
-    <li ng-click="toContact()">Contact</li>
+    <li class="nameLogo" ng-click="toHome()" ng-class="{ 'activeNavLink':navigation.showHome }">Bill Horst</li>
+    <li ng-click="toProjects()" ng-class="{ 'activeNavLink':navigation.showProjects }">Projects</li>
+    <li ng-click="toContact()" ng-class="{ 'activeNavLink':navigation.showContact }">Contact</li>
     <li class="resumeDropdown">Resume
       <div class="dropdown-content">
         <a target="_blank" href="{{url.resumeApp}}" ng-click="openResumeApp()">View</a>
@@ -18,9 +18,9 @@
 </div>
 <div ng-show="languageChoice.isJapanese">
   <ul class="navList">
-    <li class="nameLogo" ng-click="toHome()">ホースト-ビリー</li>
-    <li ng-click="toProjects()">プロジェクト</li>
-    <li ng-click="toContact()">連絡先</li>
+    <li class="nameLogo" ng-click="toHome()" ng-class="{ 'activeNavLink':navigation.showHome }">ホースト-ビリー</li>
+    <li ng-click="toProjects()" ng-class="{ 'activeNavLink':navigation.showProjects }">プロジェクト</li>
+    <li ng-click="toContact()" ng-class="{ 'activeNavLink':navigation.showContact }">連絡先</li>
     <li class="resumeDropdown">履歴書
       <div class="dropdown-content">
         <a target="_blank" href="{{url.resumeApp}}" ng-click="openResumeApp()">閲覧</a>

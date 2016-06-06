@@ -5,6 +5,7 @@ angular.module('Directives',[])
 .directive('projects', Projects)
 .directive('contact', Contact)
 .directive('navBar', NavigationBar)
+.directive('foot', Footer)
 
 function Home() {
     return {
@@ -37,6 +38,13 @@ function Contact() {
 function NavigationBar() {
 	return {
 		templateUrl: 'templates/navBar.html',
+		type: 'E'
+	}
+}
+
+function Footer() {
+	return {
+		templateUrl: 'templates/footer.html',
 		type: 'E'
 	}
 }
