@@ -7,18 +7,21 @@ body {
 }
 
 .bodyHome {
+	background-color: black;
 	background: black url("../images/homeBackground.jpg") no-repeat;
 	background-position: top;
 	background-size: 2400px 800px;
 }
 
 .bodyProjects {
+	background-color: black;
 	background: black url("../images/projectsBackground.jpg") repeat-y;
 	background-position: top;
 	background-size: 2400px 800px;
 }
 
 .bodyContact {
+	background-color: black;
 	background: black url("../images/contactBackground.jpg") no-repeat;
 	background-position: top;
 	background-size: 2400px 800px;
@@ -66,7 +69,7 @@ NAVIGATION BAR
 .nameLogo {
 	border-right: none !important;
 	margin-right: 45px;
-	font-size: 55px !important;
+	font-size: 50px !important;
 	margin-top: -21px !important;
 }
 
@@ -106,6 +109,7 @@ HOME PAGE
 .home-picture {
 	height: 60%;
 	width: 100%;
+	background-color: black;
 	background-image: url("../images/selfPic.PNG");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -415,7 +419,7 @@ RESUME DROPDOWN
 	text-decoration: none;
 	display: block;
 	min-width: 130px;
-	font-size: 24px;
+	font-size: 18px;
 	text-align: center;
 }
 
