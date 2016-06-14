@@ -99,6 +99,7 @@ MAIN PAGE
 HOME PAGE
 ---------------------------------*/
 
+
 .home-content {
 	height: 550px;
 	width: 550px;
@@ -515,6 +516,22 @@ Media Queries
 		margin: auto;
 		margin-top: 10px;
 	}
+
+	.home-main {
+		min-height: 450px;
+	}
+
+	.home-explanation {
+		height: 40%;
+		width: 100%;
+		margin-top: -70px;
+		text-shadow: 4px 0px 2px black;
+	}
+
+	.foot {
+		height: 270px;
+	}
+
 }
 
 /*CONTACT PAGE MEDIA QUERY
